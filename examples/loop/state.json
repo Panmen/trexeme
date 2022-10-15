@@ -1,0 +1,13 @@
+{
+
+	"dir": [],
+
+	"file": [
+		{"name":"Άθροιση", "real_name":"addition"},
+		{"name":"Έλεγχος_Εγκυρότητας", "real_name":"check_input"},
+		{"name":"Διάβασμα_Πίνακα", "real_name":"read_array"}
+	],
+
+	"back": true
+
+}

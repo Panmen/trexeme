@@ -1,0 +1,15 @@
+{
+
+	"dir": [
+		{"name":"Εντολές Επιλογής", "real_name":"cond"},
+		{"name":"Εντολές Επανάληψης", "real_name":"loop"},
+		{"name":"Πίνακες", "real_name":"array"},
+		{"name":"Υποπρογράμματα", "real_name":"sub"},
+		{"name":"Διάφορα", "real_name":"misc"}
+	],
+
+	"file": [],
+
+	"back": false
+
+}

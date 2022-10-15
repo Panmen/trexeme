@@ -1,0 +1,12 @@
+{
+
+	"dir": [],
+	"file": [
+		{"name":"Διάβασμα_Πίνακα", "real_name":"read_array"},
+		{"name":"Καταχώρηση_Ατόμων", "real_name":"people_entry"},
+		{"name":"Μέγιστος_Πίνακα", "real_name":"max_array"},
+		{"name":"Ταξινόμηση_Φυσαλίδας", "real_name":"bubble_sort"}
+	],
+	"back": true
+
+}

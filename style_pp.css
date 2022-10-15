@@ -1,0 +1,38 @@
+
+@media only screen and (max-width:400px){
+	header{
+		height: calc(var(--header) * 1.5);
+	}
+}
+
+h2, h3, h4, p {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+	text-align: center;
+	font-size: 2.2rem;
+}
+
+h3 {
+	padding: 0px calc(2 * var(--margin));
+	margin-top: calc(2 * var(--margin));
+}
+
+p {
+	color: white;
+	padding: 0px calc(3 * var(--margin));
+	margin-top: calc(var(--margin));
+}
+
+a {
+	color: var(--col-accent);
+	word-break: break-all;
+}
+
+.space {
+	width: 1px;
+	height: 100px;
+}
+

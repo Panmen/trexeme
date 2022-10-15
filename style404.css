@@ -1,0 +1,55 @@
+
+@media only screen and (max-width:400px){
+	header{
+		height: calc(var(--header) * 1.5);
+	}
+}
+
+
+.title404{
+
+	width: 100%;
+	padding: 0px;
+	margin-top: 4rem;
+
+
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-size: 8rem;
+	color: var(--col-accent);
+
+	text-shadow: 3px 3px var(--col-light);
+}
+
+.sub404{
+	width: 100%;
+	padding: 0px;
+	margin-top: 11rem;
+	margin-bottom: 0px;
+
+
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-size: 2rem;
+	color: var(--col-light);
+}
+
+.btn404{
+	display: block;
+	width: 100%;
+	padding: 0px;
+	margin-top: 1rem;
+
+
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.35rem;
+	color: var(--col-accent);
+	
+	transition: color 200ms;
+}
+
+.btn404:hover{
+	color: white;
+}

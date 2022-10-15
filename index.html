@@ -1,0 +1,121 @@
+<html>
+
+
+<head>
+	<title>TrexeMe | Διερμηνέας Γλώσσας</title>
+	<meta name="description" contnent="Το TrexeMe είναι διερμηνέας της Γλώσσας (γλώσσα προγραμματισμού του μαθήματος ανάπτυξης εφαρμογών Γ λυκείου). Με λίγα λόγια μπορεί να τρέξει τα προγράμματά σου!">
+	<meta name="keywords" content="τρέξε,ΑΕΠΠ,αεππ,γλώσσα,διερμηνέας,trexeme,προγραμματα,παραδειγματα,ασκησεις προγραμματισμου γ λυκειου, προγραμματισμος γ λυκειου">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="/codemirror-5.47.0/lib/codemirror.css">
+	<link rel="stylesheet" href="/codemirror-5.47.0/theme/rubyblue_edited.css">
+	<link href="https://fonts.googleapis.com/css?family=Carter+One|Roboto&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+
+</head>
+
+
+
+<body>
+
+	<header>
+		<h1 class="unselectable name pointer" onclick="document.location='/'">TrexeMe</h1>
+
+		<div class=margin></div>
+
+		<div class="btn unselectable" id="btn_runstop" onclick="btn_runstop()">Run</div>
+		<a class="btn unselectable" href="#save_popup">Save</a>
+		<a class="btn unselectable" href="#load_popup">Load</a>
+		<a class="btn unselectable" href="#example_popup">Code</a>
+		<a class="btn unselectable right desktoponly" href="faq.html">FAQ</a>
+	</header>
+
+
+	<textarea id=code_area></textarea>
+
+	<div class="screen_container">
+	<div id="screen"></div>
+
+	<input type=text id="keyboard" onkeydown='keyboard_down(event)' placeholder="Είσοδος"></input>
+	</div>
+
+
+
+	<!-- Save Popup -->
+	<div class="popup" id="save_popup">
+		<div class="popup_window">
+			<div class="popup_header">
+			<h1 class="unselectable">Αποθήκευση</h1>
+			</div>
+
+			<h4 class="unselectable">Όνομα αρχείου:</h4>
+			<input type=text id="save_filename" value="πρόγραμμα"></input>
+
+			<a class="popup_btn unselectable" href="#">Cancel</a>
+			<div class="popup_btn unselectable" onclick="save()">Save</div>
+		</div>
+	</div>
+
+	<!-- Load Popup -->
+	<div class="popup" id="load_popup">
+		<div class="popup_window">
+			<div class="popup_header">
+			<h1 class="unselectable">Φόρτωση</h1>
+			</div>
+
+			<input type=file accept=".txt" id="load_file"></input>
+
+			<a class="popup_btn unselectable" href="#">Cancel</a>
+			<div class="popup_btn unselectable" onclick="load()">Load</div>
+		</div>
+	</div>
+
+
+	<!-- Examples Popup -->
+	<div class="popup" id="example_popup">
+		<div class="popup_window popup_window_moveup">
+			<div class="popup_header">
+			<h1 class="unselectable">Παραδείγματα</h1>
+			</div>
+
+			<ul class="file_explorer" id="file_explorer">
+
+			</ul>
+
+			<a class="popup_btn unselectable" href="#">Cancel</a>
+		</div>
+	</div>
+
+	<footer>
+		<ul>
+			<li>
+				<a href="faq.html">Συχνές Ερωτήσεις</a>
+			</li>
+			<li>
+				<a href="privacy_policy.html">Πολιτική Απορρήτου</a>
+			</li>
+		</ul>
+
+
+</body>
+
+<!-- Filesaver -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+
+<!-- Codemirror Stuff -->
+<script src="/codemirror-5.47.0/lib/codemirror.js"></script>
+<script src="/codemirror-5.47.0/addon/mode/simple.js"></script>
+<script src="/js/glwssa_mode.js" charset="utf-8"></script>
+
+
+<!-- Functional stuff -->
+<script src="/js/file_explorer.js" charset="utf-8"></script>
+<script src="/js/initializer.js" charset="utf-8"></script>
+<script src="/js/autosave.js" charset="utf-8"></script>
+<script src="/js/controller.js" charset="utf-8"></script>
+<script src="/js/screen.js" charset="utf-8"></script>
+<script src="/js/resize.js" charset="utf-8"></script>
+
+
+
+</html>
