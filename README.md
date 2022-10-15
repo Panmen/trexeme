@@ -1,2 +1,4 @@
-# trexeme
-An interpreter for an educational programming language
+# Trexeme
+
+This is an interpreter for the educational programming language
+used in Greek high schools.
