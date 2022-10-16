@@ -5,7 +5,7 @@ setInterval(auto_save, 1000);
 function auto_load(){
 	var save = window.localStorage.getItem("autosave");
 	if(save == undefined){
-		var data = httpGet("/examples/misc/Welcome.txt");
+		var data = httpGet("trexeme/examples/misc/Welcome.txt");
 		editor.setValue(data);
 	}else{
 		editor.setValue(save);
