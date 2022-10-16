@@ -49,7 +49,7 @@ function is_whitespace(c){
 }
 
 function create_worker(){
-	program_worker = new Worker("/js/program_worker.js");
+	program_worker = new Worker("/trexeme/js/program_worker.js");
 	
 	program_worker.onmessage = function(event){
 		console.log("Main");
